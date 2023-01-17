@@ -110,7 +110,7 @@ MDBNavbar {
 .bg {
   top: 1px;
   position: fixed;
-  background-color: #71f881;
+  background-color: #c9f871;
   height: 60px;
   width: 1490px;
   margin-right: 0.5rem;
@@ -125,7 +125,7 @@ MDBNavbar {
 .ribbon {
   position: fixed;
   margin: 0px 0px 0px 520px;
-  background-color: red;
+  background-color: rgb(0, 102, 255);
   color: white;
   top: 10px;
   width: 160px;
@@ -136,7 +136,7 @@ MDBNavbar {
 .ribbon2 {
   position: fixed;
   margin: 0px 0px 0px 700px;
-  background-color: red;
+  background-color: rgb(0, 102, 255);
   color: white;
   top: 10px;
   width: 160px;
@@ -147,8 +147,8 @@ MDBNavbar {
 .ribbon:hover {
   position: fixed;
   margin: 0px 0px 0px 520px;
-  background-color: rgb(195, 255, 0);
-  color: rgb(255, 0, 0);
+  background-color: rgb(94, 94, 94);
+  color: rgb(0, 0, 0);
   top: 10px;
   width: 160px;
   text-align: center;
@@ -156,8 +156,8 @@ MDBNavbar {
 .ribbon2:hover {
   position: fixed;
   margin: 0px 0px 0px 700px;
-  background-color: rgb(195, 255, 0);
-  color: rgb(255, 0, 0);
+  background-color: rgb(94, 94, 94);
+  color: rgb(0, 0, 0);
   top: 10px;
   width: 160px;
   text-align: center;

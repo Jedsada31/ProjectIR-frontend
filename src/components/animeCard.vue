@@ -31,12 +31,12 @@ export default {
   /* padding: 50px; */
   width: 250px;
   cursor: pointer;
-  border: 5px solid #fad61f;
+  border: 5px solid #6b4c08;
   margin-bottom: 18px;
 }
 .anime-card:hover {
   transform: scale(1.01);
-  box-shadow: 0 3px 12px 0 rgba(252, 0, 0, 0.459);
+  box-shadow: 0 3px 12px 0 rgba(182, 202, 0, 0.459);
 }
 .anime-link {
   color: #000000;
