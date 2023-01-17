@@ -1,6 +1,6 @@
 <template>
-  <a href="/"><img id="logo" src="@/assets/logo2.png" alt="a" /></a>
-  <div id="nav">
+  <div class="bg">
+    <a href="/"><img class="logo" src="@/assets/logo2.png" alt="a" /></a>
     <div class="menu">
       <div class="navbar">
         <router-link class="ribbon" :to="{ name: 'home' }">Home</router-link>
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand">
           <ul v-if="!GStore.currentUser" class="navbar-nav ml-auto">
             <li class="nav-item">
-              <router-link to="/login" class="nav-link logout">
+              <router-link to="/login" class="nav-link logout2">
                 <font-awesome-icon icon="sign-in-alt" /> Login
               </router-link>
             </li>
@@ -38,7 +38,7 @@
             </p>
             <li class="nav-item">
               <a class="nav-link" @click="logout">
-                <font-awesome-icon icon="sign-out-alt" /> Logout
+                <font-awesome-icon icon="sign-out-alt" /> | Logout
               </a>
             </li>
           </ul>
@@ -73,10 +73,15 @@ export default {
 };
 </script>
 <style scoped>
-#nav {
-  width: 50px;
-  background: rgba(201, 0, 241, 0.925);
-}
+/* #nav {
+  position: cover;
+  top: 1px;
+  height: 60px;
+  width: 1460px;
+  background: rgba(146, 246, 149, 0.925);
+  margin-right: 0.5rem;
+  border-radius: 8px;
+} */
 .menu {
   display: flex;
   flex-direction: row;
@@ -93,6 +98,23 @@ MDBNavbar {
 * {
   margin: 0;
   padding: 0;
+}
+.logo {
+  position: fixed;
+  margin: -10px 0px 0px -745px;
+  top: 10px;
+  height: 60px;
+  padding: 0 0px;
+  width: 70px;
+}
+.bg {
+  top: 1px;
+  position: fixed;
+  background-color: #71f881;
+  height: 60px;
+  width: 1490px;
+  margin-right: 0.5rem;
+  border-radius: 8px;
 }
 .body {
   position: fixed;
@@ -142,7 +164,7 @@ MDBNavbar {
 }
 .logout {
   position: fixed;
-  margin: 0px 0px 0px 1300px;
+  margin: 10px 0px 0px 1300px;
   background-color: #ff0000;
   color: white;
   top: 10px;
@@ -154,7 +176,31 @@ MDBNavbar {
 }
 .logout:hover {
   position: fixed;
-  margin: 0px 0px 0px 1300px;
+  margin: 10px 0px 0px 1300px;
+  background-color: rgb(195, 255, 0);
+  color: rgb(255, 0, 0);
+  top: 10px;
+  /* height: 35px; */
+  width: 150px;
+  text-align: center;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+.logout2 {
+  position: fixed;
+  margin: 10px 0px 0px 1300px;
+  background-color: #ff0000;
+  color: white;
+  top: 10px;
+  /* height: 35px; */
+  width: 150px;
+  text-align: center;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+.logout2:hover {
+  position: fixed;
+  margin: 10px 0px 0px 1300px;
   background-color: rgb(195, 255, 0);
   color: rgb(255, 0, 0);
   top: 10px;
@@ -166,14 +212,22 @@ MDBNavbar {
 }
 .search {
   position: fixed;
-  margin: 0px 0px 0px 250px;
+  margin: 15px 0px 0px 250px;
+  top: 9px;
+  width: 100px;
+  text-align: center;
+}
+.search:hover {
+  position: fixed;
+  background-color: aqua;
+  margin: 15px 0px 0px 250px;
   top: 9px;
   width: 100px;
   text-align: center;
 }
 .searchbar {
   position: fixed;
-  margin: 0px 0px 0px 100px;
+  margin: 15px 0px 0px 100px;
   top: 9px;
   width: 150px;
   text-align: center;
@@ -183,7 +237,6 @@ MDBNavbar {
   margin: 0px 0px 0px -250px;
   top: 40px;
 }
-
 #container {
   position: relative;
   width: 80%;
@@ -197,15 +250,15 @@ MDBNavbar {
   display: flex;
   max-height: 60px;
 }
-#logo {
+/* .logo {
   position: fixed;
-  margin: -15px 0px 0px -750px;
+  margin: -10px 0px 0px -730px;
   top: 10px;
-  height: 65px;
+  height: 60px;
   padding: 0 0px;
   background-color: white;
   width: 70px;
-}
+} */
 #container > nav > ul {
   margin: 0;
   padding: 0;
