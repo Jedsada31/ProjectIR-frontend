@@ -9,11 +9,7 @@
           <div class="body2"></div>
           <div class="body2">
             <div class="page2">
-              <img
-                class="img"
-                src="@/assets/shonen_heroes_by_oliverlastra23_d8oldkk-pre.jpg"
-                alt="Paris"
-              />
+              <img class="img" src="@/assets/anime_pic.jpg" alt="Paris" />
             </div>
             <div class="body2">
               <div class="">

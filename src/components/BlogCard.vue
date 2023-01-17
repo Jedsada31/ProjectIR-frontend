@@ -36,7 +36,7 @@
   </div>
 </template>
 <script>
-import UserService from '@/service/UserService'
+import UserService from '@/service/UserService';
 export default {
   inject: ['GStore'],
   name: 'BlogCard',
@@ -49,14 +49,14 @@ export default {
   data() {
     return {
       anime_id: this.item.mal_id
-    }
+    };
   },
   methods: {
     delete_bookmark() {
-      console.log(this.anime_id)
-      UserService.remove_bookmark(this.GStore.currentUser.id, this.anime_id)
-      setTimeout(() => this.$router.go(), 1000)
+      console.log(this.anime_id);
+      UserService.remove_bookmark(this.GStore.currentUser.id, this.anime_id);
+      setTimeout(() => this.$router.go(), 1000);
     }
   }
-}
+};
 </script>

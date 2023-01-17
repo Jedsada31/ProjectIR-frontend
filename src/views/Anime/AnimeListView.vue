@@ -19,12 +19,12 @@
   </div>
 </template>
 <script>
-import CardView from '@/components/Card.vue'
+import CardView from '@/components/Card.vue';
 export default {
   inject: ['GStore'],
   name: 'AnimeListView',
   components: {
     CardView
   }
-}
+};
 </script>

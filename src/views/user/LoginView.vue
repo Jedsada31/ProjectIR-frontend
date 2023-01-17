@@ -9,11 +9,7 @@
           <div class="body2"></div>
           <div class="body2">
             <div class="page2">
-              <img
-                class="img"
-                src="@/assets/shonen_heroes_by_oliverlastra23_d8oldkk-pre.jpg"
-                alt="Paris"
-              />
+              <img class="img" src="@/assets/anime_pic.jpg" alt="Paris" />
             </div>
             <div class="body2">
               <div class="">
@@ -58,9 +54,9 @@
 </template>
 
 <script>
-import { Form, Field, ErrorMessage } from 'vee-validate'
-import * as yup from 'yup'
-import AuthService from '@/service/AuthService.js'
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import * as yup from 'yup';
+import AuthService from '@/service/AuthService.js';
 export default {
   name: 'LoginView',
   components: {
@@ -72,25 +68,25 @@ export default {
     const schema = yup.object().shape({
       username: yup.string().required('User name is required!'),
       password: yup.string().required('Password is required!')
-    })
+    });
     return {
       loading: false,
       message: '',
       schema
-    }
+    };
   },
   methods: {
     handleLogin(user) {
       AuthService.login(user)
         .then(() => {
-          this.$router.push({ path: '/' })
+          this.$router.push({ path: '/' });
         })
         .catch(() => {
-          this.message = 'could not login'
-        })
+          this.message = 'could not login';
+        });
     }
   }
-}
+};
 </script>
 <style scoped>
 @import url('https://rsms.me/inter/inter-ui.css');

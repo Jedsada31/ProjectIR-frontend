@@ -59,8 +59,8 @@
 <script>
 // import { Form } from 'vee-validate'
 // import * as yup from 'yup'
-import UserService from '@/service/UserService.js'
-import dropdown from 'vue-dropdowns'
+import UserService from '@/service/UserService.js';
+import dropdown from 'vue-dropdowns';
 export default {
   inject: ['GStore'],
   name: 'AnimeDetailView',
@@ -80,7 +80,7 @@ export default {
       choose: {
         name: '1'
       }
-    }
+    };
   },
   methods: {
     add_bookmark() {
@@ -89,14 +89,14 @@ export default {
         this.GStore.animeDetail[0].mal_id,
         this.choose.name
       ).then(() => {
-        alert('Success add favorite')
-      })
+        alert('Success add favorite');
+      });
     },
     methodToRunOnSelect(payload) {
-      this.choose = payload
+      this.choose = payload;
     }
   }
-}
+};
 </script>
 <style>
 span {

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import LoginForm from '../views/user/LoginForm.vue';
-import DetailView from '../views/anime/DetailView.vue';
+import DetailView from '../views/Anime/DetailView.vue';
 import GStore from '@/store';
 
 const routes = [
