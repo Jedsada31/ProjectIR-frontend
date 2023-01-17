@@ -1,4 +1,4 @@
-# webir
+# myproject-ir-frontned
 
 ## Project setup
 ```
